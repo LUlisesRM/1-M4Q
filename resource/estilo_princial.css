@@ -1,0 +1,90 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+
+        background-repeat: no-repeat;
+        background-image: url(../media/fondomb1.jpg);
+        background-size: 100% 400%;
+        
+  }
+
+
+
+.cuerpo_encabezado{
+    box-sizing: border-box;
+}
+
+.encabezado{
+    background-color: white ;
+    
+    
+}
+img{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 200px;
+    margin-right: 5px;
+    vertical-align: middle;
+    border-right: none;
+    padding-left: 25px;
+}
+
+.tabla_encabezado{
+margin-left: auto;
+
+}
+
+
+.lista_encabezado{
+    list-style: none;
+    display: flex;
+}
+
+.columna_encabezado{
+    color: #000;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    
+    
+}
+
+.celda_encabezado{
+    display: flex;
+    
+}
+
+.contenedor_encabezado{
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-top: 30px;
+}
+
+.titulo1{
+    color: rgb(26, 30, 92);
+    text-align: center;
+    background-color: gray;
+
+}
+
+.tabla_1{
+border: 1px #000;
+}
+
+
