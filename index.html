@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="curva_header">
             <div>
                 <img class=logo_principal src="resource/media/imaq_mexico.jpg" alt="IMAQ MEXICO">
             </div>
@@ -25,17 +25,39 @@
             <div>
                 <nav>
                     <ul>
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Iniciar Secion</a></li>
                         <li><a href="#">Crear Cuenta</a></li>
-                        <li><a href="#">Ingresar</a></li>
-                        <li><a href="#">Compras</a></li>
+                        <li><a href="#">Carrito</a></li>
                     </ul>
                 </nav>
             </div>
+            <div>
+                <ul class="menu_encabezado">
+                    <li>Productos</li>
+                    <li>Servicios</li>
+                    <li>Clientes</li>
+                    <li>Más</li>
+                </ul>
+            </div>
     </header>
 
+    <div class="carousel">
+        <img src="resource/media/expo_imaq.jpg" alt="Imagen 1">
+        <img src="resource/media/expo_imaq_2.jpg" alt="Imagen 2">
+        <img src="resource/media/expo_imaq_3.jpg" alt="Imagen 3">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.carousel').slick();
+        });
+    </script>
+
+      
+
+    
     
 </body>
 </html>

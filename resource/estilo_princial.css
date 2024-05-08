@@ -2,6 +2,15 @@ body{
     margin: 0px;
 }
 
+header {
+    display: ruby-text; 
+    align-items: center; 
+    background-color: #dbdcdd;
+    padding: 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
 .logo_principal {
     display: inline-block;
     vertical-align: middle;
@@ -10,27 +19,44 @@ body{
 .search{
     padding-left: 30px;
     padding-right: 150px;
+    display: table-cell;
 }
 
 .buscador input{
-    display: flex;
+    display: inline;
     width: 500px;
     height: 30px;
     text-align: left;
     vertical-align:bottom;
-
 }
 
-header {
-    display: flex; 
-    align-items: center; 
-    background-color: #dbdcdd;
+.buscador button{
+    height: 35px;
+}
+
+.carousel{
+    height: 500px;
+    width: 500px;
+}
+
+.menu_encabezado{
+    display: ruby;
+    padding-inline-start: 0px;
+}
+
+.menu_encabezado li{
     padding: 20px;
 }
 
 
-
 nav ul {
+    list-style-type: none;
+    display: contents;
+}
+
+
+
+li{
     list-style-type: none;
 }
 
