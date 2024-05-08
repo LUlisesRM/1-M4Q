@@ -7,47 +7,35 @@
     <link rel="stylesheet" href="resource/estilo_princial.css">
     <title>IMAQ</title>
 </head>
-<style> a {text-decoration: none;} </style>
+
 <body>
     <header>
-        <div>
             <div>
-                <img src="resource/media/imaq_mexico.jpg" alt="IMAQ MEXICO">
+                <img class=logo_principal src="resource/media/imaq_mexico.jpg" alt="IMAQ MEXICO">
             </div>
 
-            <div>
-                <input type="" id="" placeholder="">
-                <button onclick="search()">Buscar</button>
-                <div id="searchResults"></div>
+            <div class=search>
+                <form class=buscador action="">
+                    <input type="" id="" placeholder="Busca aqui tus productos">
+                    <button onclick="search()">Buscar</button>
+                    <div id="searchResults"></div>
+                </form>
             </div>
-        </div>
         
-        <div>
             <div>
-                <ul>Inicio</ul>
+                <nav>
+                    <ul>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Crear Cuenta</a></li>
+                        <li><a href="#">Ingresar</a></li>
+                        <li><a href="#">Compras</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div>
-                <ul>Quienes Somos</ul>
-            </div>
-            <div>
-                <ul>Productos</ul>
-            </div>
-            <div>
-                <ul>Contacto</ul>
-            </div>
-        </div>
+    </header>
 
-        <div>
-            <div>
-                <ul>Crear cuenta</ul>
-            </div>
-            <div>
-                <ul>Ingresar</ul>
-            </div>
-            <div>
-                <ul>Compras</ul>
-            </div>
-        </div>
-</header>
+    
 </body>
 </html>
