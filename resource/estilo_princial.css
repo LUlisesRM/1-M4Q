@@ -35,8 +35,8 @@ header {
 }
 
 .carousel {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 600px;
+    margin: 10px;
     display: flex;
 }
 #imagen {
