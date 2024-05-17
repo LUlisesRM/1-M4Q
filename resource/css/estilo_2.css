@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.fondo_header{
+    background-color: rgb(14, 21, 43);
+    height: 120px;   
+}
+
+.logo_header{
+    font-size: 35px;
+    color: red;
+    margin-left: 20px;
+}

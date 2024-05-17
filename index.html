@@ -4,96 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resource/estilo_princial.css">
-    <title>IMAQ</title>
-    <script>
-        window.onload = function () {
-            // Variables
-            const IMAGENES = [
-                'resource/media/expo_imaq.jpg',
-                'resource/media/expo_imaq_2.jpg',
-                'resource/media/expo_imaq_3.jpg'
-            ];
-            const TIEMPO_INTERVALO_MILESIMAS_SEG = 2000;
-            let posicionActual = 0;
-            let $botonRetroceder = document.querySelector('#retroceder');
-            let $botonAvanzar = document.querySelector('#avanzar');
-            let $imagen = document.querySelector('#imagen');
-            let intervalo;
-        
-            // Funciones
-            function pasarFoto() {
-                if(posicionActual >= IMAGENES.length - 1) {
-                    posicionActual = 0;
-                } else {
-                    posicionActual++;
-                }
-                renderizarImagen();
-            }
-        
-            function retrocederFoto() {
-                if(posicionActual <= 0) {
-                    posicionActual = IMAGENES.length - 1;
-                } else {
-                    posicionActual--;
-                }
-                renderizarImagen();
-            }
-        
-            function renderizarImagen () {
-                $imagen.style.backgroundImage = `url(${IMAGENES[posicionActual]})`;
-            }
-        
-            function iniciarIntervalo() {
-                intervalo = setInterval(pasarFoto, TIEMPO_INTERVALO_MILESIMAS_SEG);
-            }
-        
-            function detenerIntervalo() {
-                clearInterval(intervalo);
-            }
-        
-            // Eventos
-            $botonAvanzar.addEventListener('click', pasarFoto);
-            $botonRetroceder.addEventListener('click', retrocederFoto);
-        
-            // Iniciar
-            renderizarImagen();
-            iniciarIntervalo();
-        };
-</script>    
+    <link rel="stylesheet" href="resource/css/estilo_princial.css">
+    <script src="resource/js/carusel.js"></script>
+    <title>IMAQ</title> 
 </head>
 
 <body>
-    <header class="curva_header">
-            <div>
-                <img class=logo_principal src="resource/media/imaq_mexico.jpg" alt="IMAQ MEXICO">
-            </div>
-
-            <div class=search>
-                <form class=buscador action="">
-                    <input type="" id="" placeholder="Busca aqui tus productos">
-                    <button onclick="search()">Buscar</button>
-                    <div id="searchResults"></div>
-                </form>
-            </div>
+    <header>
+        <div>
+            <img class=logo_principal src="resource/media/imaq_mexico.jpg" alt="IMAQ MEXICO">
+        </div>
         
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Iniciar Secion</a></li>
-                        <li><a href="#">Crear Cuenta</a></li>
-                        <li><a href="#">Carrito</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <ul class="menu_encabezado">
-                    <li>Productos</li>
-                    <li>Servicios</li>
-                    <li>Clientes</li>
-                    <li>Más</li>
+        <div>
+            <form class=buscador action="">
+                <input type="" id="" placeholder="Busca aqui tus productos">
+                <button>Buscar</button>
+            </form>
+        </div>
+        
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#">Iniciar Secion</a></li>
+                    <li><a href="#">Crear Cuenta</a></li>
+                    <li><a href="#">Carrito</a></li>
                 </ul>
-            </div>
+            </nav>
+        </div>
+
+        <nav class="dropdownmenu">
+            <ul>
+              <li><a href="#">Productos</a></li>
+                <ul id="submenu">
+                    <li><a href="#">Planchas</a></li>
+                    <li><a href="#">Laser</a></li>
+                </ul>
+              <li><a href="#">Servicios</a>
+                <ul id="submenu">
+                  <li><a href="#">Soporte Tecnico</a></li>
+                  <li><a href="#">Disenio</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
     </header>
 
     <div class="banner">
