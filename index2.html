@@ -11,32 +11,22 @@
 
 <body>
     <header>
-        <div class="fondo_header">
+        <div class="contenedor_header">
             <div class="logo_header">
-                <h1>LOGO</h1>
+                <img src="resource/media/imaq_mexico.jpg" alt="IMAQ">
             </div>
 
-            <div>
-                <span>Ingrese su Codigo Postal</span>
+            <div class="cajabuscar">
+                <form method="get" id="buscarform">
+                    
+                        <input type="text" id="s" value="" placeholder="Buscar"  />
+                        <input class="button" type="submit" value="" />
+                        <i class="search"></i>
+                    
+                </form>
             </div>
 
-            <div>
-                <input type="text">
-                <button>Buscar</button>
-            </div>
-
-            <div>
-                <nav>
-                    <ul>
-                        <li>Productos</li>
-                        <li>Servicios</li>
-                        <li>Clientes</li>
-                        <li>Mas</li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div>
+            <div class="Logeo">
                 <nav>
                     <ul>
                         <li>Ingresar</li>
@@ -45,7 +35,34 @@
                 </nav>
             </div>
 
-            <div>
+            <div class="postal">
+                <nav>
+                    Ingresa tu Codigo Postal
+                </nav>
+            </div>
+
+            <div class="dropdownmenu">
+                <nav>
+                    <ul>
+                    <li><a href="#">Productos</a>
+                        <ul id="submenu">
+                            <li><a href="#">Sublimacion</a></li>
+                            <li><a href="#">Laser</a></li>
+                            <li><a href="#">Material</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Servicios</a>
+                        <ul id="submenu">
+                            <li><a href="#">Soporte Tecnico</a></li>
+                            <li><a href="#">Capacitacion</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="carrito">
                 <span>Carrito</span>
             </div>
 

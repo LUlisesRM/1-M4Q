@@ -3,13 +3,163 @@
     padding: 0px;
 }
 
-.fondo_header{
-    background-color: rgb(14, 21, 43);
-    height: 120px;   
+body{
+    font-family: Lexend Deca, sans-serif;
+}
+.contenedor_header{
+    background-color: #30A6E6;
+    height: 150px;
+    border-radius: 0 0 24px 24px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:"nav-left-top nav-center-top nav-right-top"
+    "nav-left-bottom nav-center-bottom nav-right-bottom";
+
 }
 
 .logo_header{
-    font-size: 35px;
-    color: red;
-    margin-left: 20px;
+width: 300px;
 }
+
+.logo_header img{
+    width: auto;
+    height: 66px;
+    margin: 20px;
+    padding-left: 20px;
+}
+
+.cajabuscar {
+    float: none;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 25px;
+    margin-top: 29px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    text-align: left;
+    padding-right: 200px;
+}
+
+#buscarform {
+    padding: 0;
+    float: left;
+    clear: both;
+    width: 100%;
+    position: relative;
+}
+/*#buscarform fieldset { float: left }*/
+
+#buscarform .search {
+    font-size: 20px;
+    top: 0px;
+    color: #FFF;
+    background: #33BCF2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 9px;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+}
+#buscarform fieldset { width: 100% }
+
+#s {
+    width: 100%;
+    background-color: #fff;
+    float: left;
+    padding: 8px 0;
+    text-indent: 10px;
+    color: #555555;
+    border-radius: 8px;
+    border: 0px; 
+    box-sizing: border-box;
+
+    height: 42px;
+}
+
+.button{
+    right: 0;
+    top: 0;
+    padding: 9px 0;
+    float: right;
+    border: 0;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+    color: #a4a4a4;
+    transition: all 0.25s linear;
+    background: transparent;
+    z-index: 10;
+    position: absolute;
+    border: 0;
+    vertical-align: top;
+}
+
+.logeo{
+
+}
+
+.postal{
+
+}
+
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;
+}
+.dropdownmenu ul {
+	background: gray;
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	background: #30A6E6;
+	color: #FFFFFF;
+	display: block;
+	font: bold 12px/20px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.dropdownmenu li:hover a {
+	background: #000000;
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background: #DF4B05;
+}
+#submenu a {
+	background-color:#000000;
+}
+
