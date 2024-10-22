@@ -6,7 +6,7 @@ window.onload = function () {
         'resource/media/expo_imaq_2.jpg',
         'resource/media/expo_imaq_3.jpg'
     ];
-    const TIEMPO_INTERVALO_MILESIMAS_SEG = 2000;
+    const TIEMPO_INTERVALO_MILESIMAS_SEG = 5000;
     let posicionActual = 0;
     let $botonRetroceder = document.querySelector('#retroceder');
     let $botonAvanzar = document.querySelector('#avanzar');
